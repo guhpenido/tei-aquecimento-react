@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+  font-family: 'Montserrat', sans-serif;
+}
+
+body {
+  margin: 0;
+  background: rgb(63, 94, 251);
+  background: linear-gradient(90deg, rgba(63, 94, 251, 1) 0%, rgba(252, 70, 107, 1) 100%);
+}
+
+.container-menu {
+  background: rgb(3, 10, 59);
+  background: linear-gradient(8deg, rgba(3, 10, 59, 1) 0%, rgba(0, 103, 244, 1) 42%, rgba(255, 0, 189, 1) 80%);
+  width: 100%;
+  height: 80px;
+  display: flex;
+  justify-content: space-around;
+  border-bottom: black 3px solid;
+}
+
+.logo {
+  width: 240px;
+  height: 60px;
+  margin: 10px;
+  display: flex;
+}
+
+.logo img {
+  width: 100%;
+}
+
+.botoes {
+  width: 500px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.botoes a {
+  display: flex;
+  margin-right: 50px;
+  background-color: rgb(255, 166, 0);
+  width: 100px;
+  height: 50px;
+  margin-top: 15px;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  text-decoration: none;
+  border-radius: 25px;
+  color: #fff;
+
+}
+
+.botoes a:hover {
+  transform: scale(1.1);
+}
+
+.noticias-principais {
+  display: flex;
+  justify-content: center;
+}
+
+.carousel {
+  width: 100%;
+  height: 350px;
+  overflow: hidden;
+  position: relative;
+}
+
+.carousel-slide {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.5s ease-in-out;
+}
+
+.carousel-slide2 {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.5s ease-in-out;
+}
+
+.card,
+.card2 {
+  margin-left: 20px;
+  flex: 0 0 20%;
+  color: #1b1b1b;
+  width: 190px;
+  height: 254px;
+  position: relative;
+  outline: 6px solid #f5f5f5;
+  border-radius: 8px;
+  line-height: 150%;
+  padding: 16px;
+  background-size: cover;
+  overflow: hidden;
+}
+
+.card-front {
+  bottom: 16px;
+  left: 0;
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  transition: transform 1s cubic-bezier(0.785, 0.135, 0.150, 0.860);
+}
+
+.card-back {
+  transform: translateX(120%);
+  transition: transform 1s cubic-bezier(0.785, 0.135, 0.150, 0.860);
+}
+
+.title {
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+.title::after {
+  content: "";
+  display: block;
+  width: 50%;
+  border-radius: 50%;
+  height: 2px;
+  margin: 2px auto;
+  background-color: #1b1b1b;
+}
+
+.card:hover,
+.card2:hover {
+  background-color: #1b1b1b25;
+  cursor: pointer;
+}
+
+p {
+  color: rgb(245, 193, 50);
+}
+
+.card:hover .card-front,
+.card2:hover .card-front {
+  transform: translateX(-100%);
+}
+
+.card:hover .card-back,
+.card2:hover .card-back {
+  transform: translateX(0);
+}
+
+
+#n1 {
+  background-image: url(https://www.infomoney.com.br/wp-content/uploads/2019/06/taylor-swift-1.jpg?fit=900%2C730&quality=50&strip=all);
+}
+
+#n2 {
+  background-image: url(https://www.cnnbrasil.com.br/wp-content/uploads/sites/12/Reuters_Direct_Media/BrazilOnlineReportWorldNews/tagreuters.com2022binary_LYNXMPEI920YD-FILEDIMAGE.jpg?w=876&h=484&crop=1);
+}
+
+#n3 {
+  background-image: url(https://www.atribuna.com.br/storage/Esportes/Santos_FC/img1942872113305.webp);
+}
+
+#n5 {
+  background-image: url(https://www.cnnbrasil.com.br/wp-content/uploads/sites/12/2023/02/GettyImages-1437578536.jpg?w=876&h=484&crop=1);
+}
+
+#n4 {
+  background-image: url(https://p2.trrsf.com/image/fget/cf/774/0/images.terra.com/2023/06/11/bel-moreira-e-halana_instagram_bel_moreira-1hre6q68ur6g6.jpg);
+}
+
+#n6 {
+  background-image: url(https://noataque.com.br/wp-content/uploads/2023/06/BrunoLage-645x362.jpg);
+}
+
+#n7 {
+  background-image: url(https://i.em.com.br/atuKvDmYwFAeMIVMex5FnZV7gJc=/820x0/smart/imgsapp.em.com.br/app/noticia_127983242361/2023/06/12/1505975/taylor-swift_1_163901.jpg);
+}
+
+
+
+#n12 {
+  background-image: url(https://i.em.com.br/DAs57IH0XCJFrvYkkHEFF3onW5g=/1200x1200/smart/imgsapp.em.com.br/app/noticia_127983242361/2023/06/09/1505271/criancas-resgatadas-na-colombia_1_119084.png);
+}
+
+#n22 {
+  background-image: url(https://www.falapiaui.com.br/images/noticias/42589/789ab74273fe2e04205c6a32e1d1a93e.jpg);
+}
+
+#n32 {
+  background-image: url(https://conteudo.imguol.com.br/c/noticias/c2/2022/01/28/vacina-vacinacao-covid-19-coronavirus-1643392381560_v2_900x506.jpg);
+}
+
+#n52 {
+  background-image: url(https://www.cnnbrasil.com.br/wp-content/uploads/sites/12/Reuters_Direct_Media/BrazilOnlineReportSportsNews/tagreuters.com2023binary_LYNXMPEJ350OZ-FILEDIMAGE.jpg?w=876&h=484&crop=1);
+}
+
+#n42 {
+  background-image: url(https://jpimg.com.br/uploads/2022/12/design-sem-nome-2022-12-07t100043.829-750x432.png);
+}
+
+#n62 {
+  background-image: url(https://s2-g1.glbimg.com/T4tjChEuynf4dT4xDOzBqla6Sv0=/0x0:859x611/984x0/smart/filters:strip_icc/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2023/D/a/OfWDNdSamqyJ10TlOdDw/taylor-2-.jpg);
+}
+
+#n72 {
+  background-image: url(https://www.cnnbrasil.com.br/wp-content/uploads/sites/12/Reuters_Direct_Media/BrazilOnlineReportTopNews/tagreuters.com2023binary_LYNXMPEJ5B0T6-FILEDIMAGE.jpg?w=876&h=484&crop=1);
+}
+
+.footer {
+  background: rgb(3, 10, 59);
+  background: linear-gradient(8deg, rgba(3, 10, 59, 1) 0%, rgba(0, 103, 244, 1) 42%, rgba(255, 0, 189, 1) 80%);
+  padding: 30px 0px;
+  font-family: 'Play', sans-serif;
+  text-align: center;
+}
+
+.footer .row {
+  width: 100%;
+  margin: 1% 0%;
+  padding: 0.6% 0%;
+  color: black;
+  font-size: 0.8em;
+}
+
+.footer .row a {
+  text-decoration: none;
+  color: clack;
+  transition: 0.5s;
+}
+
+.footer .row a:hover {
+  color: #fff;
+}
+
+.footer .row a i {
+  font-size: 2em;
+  margin: 0% 1%;
+}
